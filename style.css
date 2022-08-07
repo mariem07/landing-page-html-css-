@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200&family=Mouse+Memoirs&family=Roboto+Condensed&display=swap');
+:root {
+   --main-color :#2f55d4 ; 
+   --second-color : #167c80; 
+   --main-text-color:#7b7f84;
+   --header-color:#3c4858;
+   --main-font:  'Barlow', sans-serif;
+   --header-font:'Mouse Memoirs', sans-serif;
+   --sub-header-font:'Roboto Condensed', sans-serif;
+   
+}
+* {
+   box-sizing: border-box;
+   font-size: 1rem;
+   color: var(--main-text-color) ; 
+   margin: 0;
+   
+}
+body {
+   background-color:rgba(183, 167, 167, 0.155);
+font-family: var(--main-font);
+font-weight: 600;
+}
+
+/* nav */
+.logo {
+   width: 5em;
+}
+nav {
+   display: flex;
+   align-items: center;
+   position :fixed;
+   left: 120px;
+   top: 20px;
+   right: 120px; 
+   
+}
+.nav-links {
+   display: flex;
+   list-style-type: none;
+   font-family: var(--sub-header-font);
+   cursor: pointer;
+   
+}
+.nav-link {
+   margin: 0em 2em ;
+   text-transform: uppercase;
+   font-weight: 800;
+   color: var(--header-color);
+}
+.chat {
+   margin-left: auto;
+}
+button > a {
+   text-decoration: none;
+   font-weight: 600;
+   letter-spacing: .09em;
+   color: var(--header-color);
+   text-transform: uppercase;
+}
+/* end  nav */
+
+/*home */ 
+.home {
+   width: 85%;
+   margin: 6em auto ;
+   padding: 2em 0em;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.home-text{
+   width: 50%; 
+}
+.home-text p {
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   font-size: 1.2em;
+   line-height: 1.5em;
+   width: 80%;
+}
+.home-img {
+   width: 500px;
+  
+}
+/*end home */ 
+
+/* services */ 
+.services {
+   text-align: center;
+}
+.services p {
+   width: 80%;
+   margin: 1em auto ;
+   line-height: 2em;
+}
+.services-exmpl{
+   margin: 3em auto;
+   display: flex;
+   justify-content: space-around;
+}
+.service img {
+   width: 65px;
+   margin: 1.5em 2em;
+}
+/* services end */
+/* about */ 
+.about {
+   background-color: rgba(128, 128, 128, 0.179);
+   padding: 2.5em 1em;
+   margin-top: 6em;
+}
+.about .notified {
+   display: flex;
+   justify-content: space-between;
+   width: 90%;
+   margin: 0 auto ;
+}
+.about .notified-text{
+   padding: 1em 0em;
+}
+.about .notified-text p {
+   margin: 1.5em 0;
+   line-height:1.8em;
+   width: 80%;
+}
+.about img {
+   width: 450px;
+   padding: .5em 1em;
+}
+/* about end */
+/*stats*/
+.stats {
+   display: flex;
+   margin: 5em auto;
+   width: 90%;
+}
+.stats .stat {
+   text-align: center;
+   padding: 0 4em;
+}
+.stats .stat h1 {
+   font-family: var(--sub-header-font);
+   font-size: 3em;
+   color: var(--main-color);
+   margin-bottom: .2em;
+}
+.stats .stat p {
+   margin-top: 1em ;
+   line-height:1.5em;
+   width: 90%;
+}
+/*stats ends*/
+/* start now */
+.start-now {
+   display: flex;
+   justify-content: space-around;
+   width: 80%;
+   margin: 10em auto ;
+}
+.start-now img {
+   width: 450px;
+}
+.start-now-text {
+   margin-left: 5em;
+}
+.start-now p {
+   margin: 1.5em 0;
+   line-height:1.8em;
+   width: 80%;
+}
+/* start now ends */
+/* contact*/
+.contact form {
+   background-color:rgba(128, 128, 128, 0.179) ;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+.contact h1 {
+   margin: .5em auto;
+}
+.contact input , textarea {
+   width: 50%;
+   margin: .5em auto;
+   border: none;
+   padding: .8em 1em;
+   border-radius: 10px; 
+}
+.contact button {
+   width: 25%;
+   margin: 3em auto ;
+   color: var(--header-color);
+   font-weight: 800;
+}
+/*contact ends */ 
+footer {
+   background-color: var(--second-color);
+   margin-top: 4em;
+   padding: 2em 5em;
+   text-align:center;
+}
+footer p {
+   color: white;
+}
+
+/* utility */ 
+.btn {
+   padding: .5em 1.8em;
+   font-family: var(--header-font);
+  border-radius: 5px;
+  border: none;
+  box-shadow: -5px -5px 0px 0px var(--main-color), 5px 5px 0px 0px var(--second-color);
+ background-color: white;
+  
+}
+.btn2{
+   padding: .8em 2.5em;
+   border-radius: 5px;
+   border: none;
+   background-color: var(--second-color);
+   color: white;
+   box-shadow: var(--main-color) 0px 6px 15px;
+}
+.title {
+   font-family: var(--header-font);
+   font-size: 4rem;
+   text-transform: capitalize;
+   color: var(--header-color);
+   letter-spacing: 3px;
+}
+.sub-title {
+   font-family: var(--sub-header-font);
+   font-size: 1.8em;
+   color: var(--header-color);
+   text-transform: capitalize;
+}
